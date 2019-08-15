@@ -1578,34 +1578,6 @@ pre .javascript .function {
 .page-post-detail .post-type-quote .post-tags {
   display: none;
 }
-.post-widgets {
-  border-top: 1px solid #eee;
-  margin-top: 45px;
-  text-align: center;
-}
-.wp_rating {
-  height: 20px;
-  line-height: 20px;
-  margin-top: 10px;
-  padding-top: 6px;
-  text-align: center;
-}
-.social-like {
-  display: flex;
-  font-size: 0.875em;
-  justify-content: center;
-  text-align: center;
-}
-.vk_like {
-  align-self: center;
-  height: 21px;
-  padding-top: 7px;
-  width: 85px;
-}
-.fb_like {
-  align-self: center;
-  height: 30px;
-}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1692,7 +1664,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #2f4b1d;
+  background: #368ff9;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2002,30 +1974,6 @@ pre .javascript .function {
   50%, 70% {
     transform: scale(1.1);
   }
-}
-#needsharebutton-postbottom {
-  cursor: pointer;
-  height: 26px;
-  margin-top: 10px;
-  position: relative;
-}
-#needsharebutton-postbottom .btn {
-  border: 1px solid #555;
-  border-radius: 3px;
-  display: initial;
-  padding: 1px 4px;
-}
-#needsharebutton-float {
-  bottom: 88px;
-  cursor: pointer;
-  left: -8px;
-  position: fixed;
-  z-index: 9999;
-}
-#needsharebutton-float .btn {
-  border: 1px solid #555;
-  border-radius: 4px;
-  padding: 0 10px 0 14px;
 }
 .page-archive .posts-collapse .archive-move-on {
   background: #999;
