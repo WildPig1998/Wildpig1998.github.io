@@ -1664,7 +1664,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #3699b3;
+  background: #de3265;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2736,6 +2736,7 @@ body {
   background: url("http://pvte3kzqu.bkt.clouddn.com/20160721165928_c4Kim.png");
   background-attachment: fixed;
   background-position: 50% 50%;
+  background-size: cover;
 }
 /*.header {
 background:url(图片链接) none repeat scroll !important;
