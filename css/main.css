@@ -1664,7 +1664,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #de3265;
+  background: #858c81;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2733,7 +2733,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("http://pvte3kzqu.bkt.clouddn.com/20160721165928_c4Kim.png");
+  background: url("https://images2.alphacoders.com/102/1025212.jpg");
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: cover;
@@ -2747,7 +2747,7 @@ background:rgba(238,238,238,0.7) none repeat scroll !important;
 }
 //侧栏图片及内部文字颜色修改
 .sidebar {
-background:url(http://pvte3kzqu.bkt.clouddn.com/20160721165928_c4Kim.png);
+background:url(https://images2.alphacoders.com/102/1025212.jpg);
 background-size: cover;
 background-position:center;
 background-repeat:no-repeat;
