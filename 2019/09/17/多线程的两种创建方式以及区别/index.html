@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="前言看到匿名内部类这个地方，总感觉有点疑惑，所以写下这篇博文……如果不少地方的理解还存在问题请见谅并指出。看了本文章你将基本知道什么是匿名内部类，如何熟练掌握并使用匿名内部类。如果你已经是大牛可以跳过，没有看的必要。 内部类——Waht在说匿名内部类之前我门需要先知道什么是类什么是内部类。先说类，我们都知道类用于描述客观世界里某一类对象的共同特征，对象是其具体体现。类可以被被认为是一种自定义的数据">
+  <meta name="description" content="Don&apos;t trouble trouble until trouble troubles you.">
 <meta name="keywords" content="JAVA">
 <meta property="og:type" content="article">
-<meta property="og:title" content="猴面雀都能看懂的匿名内部类">
-<meta property="og:url" content="http://yoursite.com/2019/08/18/猴面雀都能看懂的匿名内部类/index.html">
+<meta property="og:title" content="多线程的两种创建方式以及区别">
+<meta property="og:url" content="http://yoursite.com/2019/09/17/多线程的两种创建方式以及区别/index.html">
 <meta property="og:site_name" content="I want to learn!">
-<meta property="og:description" content="前言看到匿名内部类这个地方，总感觉有点疑惑，所以写下这篇博文……如果不少地方的理解还存在问题请见谅并指出。看了本文章你将基本知道什么是匿名内部类，如何熟练掌握并使用匿名内部类。如果你已经是大牛可以跳过，没有看的必要。 内部类——Waht在说匿名内部类之前我门需要先知道什么是类什么是内部类。先说类，我们都知道类用于描述客观世界里某一类对象的共同特征，对象是其具体体现。类可以被被认为是一种自定义的数据">
+<meta property="og:description" content="Don&apos;t trouble trouble until trouble troubles you.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-18T14:48:52.000Z">
+<meta property="og:updated_time" content="2019-09-17T03:20:25.515Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="猴面雀都能看懂的匿名内部类">
-<meta name="twitter:description" content="前言看到匿名内部类这个地方，总感觉有点疑惑，所以写下这篇博文……如果不少地方的理解还存在问题请见谅并指出。看了本文章你将基本知道什么是匿名内部类，如何熟练掌握并使用匿名内部类。如果你已经是大牛可以跳过，没有看的必要。 内部类——Waht在说匿名内部类之前我门需要先知道什么是类什么是内部类。先说类，我们都知道类用于描述客观世界里某一类对象的共同特征，对象是其具体体现。类可以被被认为是一种自定义的数据">
-  <link rel="canonical" href="http://yoursite.com/2019/08/18/猴面雀都能看懂的匿名内部类/">
+<meta name="twitter:title" content="多线程的两种创建方式以及区别">
+<meta name="twitter:description" content="Don&apos;t trouble trouble until trouble troubles you.">
+  <link rel="canonical" href="http://yoursite.com/2019/09/17/多线程的两种创建方式以及区别/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>猴面雀都能看懂的匿名内部类 | I want to learn!</title>
+  <title>多线程的两种创建方式以及区别 | I want to learn!</title>
   
 
 
@@ -239,7 +239,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/18/猴面雀都能看懂的匿名内部类/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/17/多线程的两种创建方式以及区别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wild Pig">
@@ -253,7 +253,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">猴面雀都能看懂的匿名内部类
+          <h1 class="post-title" itemprop="name headline">多线程的两种创建方式以及区别
 
             
           </h1>
@@ -270,7 +270,7 @@
                 
               
 
-              <time title="创建时间：2019-08-18 21:05:27 / 修改时间：22:48:52" itemprop="dateCreated datePublished" datetime="2019-08-18T21:05:27+08:00">2019-08-18</time>
+              <time title="创建时间：2019-09-17 09:55:48 / 修改时间：11:20:25" itemprop="dateCreated datePublished" datetime="2019-09-17T09:55:48+08:00">2019-09-17</time>
             </span>
           
             
@@ -308,7 +308,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>2.2k</span>
+              <span>0</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -318,7 +318,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
           
 
@@ -331,29 +331,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h1><pre><code>看到匿名内部类这个地方，总感觉有点疑惑，所以写下这篇博文……如果不少地方的理解还存在问题请见谅并指出。</code></pre><p>看了本文章你将基本知道什么是匿名内部类，如何熟练掌握并使用匿名内部类。如果你已经是大牛可以跳过，没有看的必要。</p>
-<h1 id="内部类——Waht"><a href="#内部类——Waht" class="headerlink" title="内部类——Waht"></a><strong>内部类——Waht</strong></h1><p>在说匿名内部类之前我门需要先知道什么是类什么是内部类。<br>先说类，我们都知道类用于描述客观世界里某一类对象的共同特征，对象是其具体体现。类可以被被认为是一种自定义的数据类型，可以使用类来定义变量。也就是所说的类类型，是一种引用数据类型。</p>
-<a id="more"></a> 
-
-
-<p>而内部类，故名思意，就是类中定义的类，内部类就相当于外部类的一个成员，你可以把内部类看成一个整体。内部类分为：<strong><em>成员内部类，局部内部类，匿名内部类</em></strong>，或者也可分为<strong><em>静态内部类</em></strong> 和 <strong><em>非静态内部类</em></strong>，而匿名内部类是非静态内部类的一种，匿名内部类没有类名，因此就不可能有构造函数，不能创建对象。</p>
-<h1 id="内部类——How"><a href="#内部类——How" class="headerlink" title="内部类——How"></a><strong>内部类——How</strong></h1><p>内部类有两种定义方式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">new 类/接口()&#123;</span><br><span class="line"> * 如果是创建了继承这个类的子类对象，我们可以重写父类的方法</span><br><span class="line"> * 如果是创建了实现这个接口的子类对象，我们必须要实现该接口的所有方法</span><br><span class="line"> * &#125;;</span><br></pre></td></tr></table></figure>
-
-<p>打个比方：</p>
-<p>使用匿名类实现接口并调用方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">public class InnerDemo &#123;</span><br><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">Outer o = new Outer();</span><br><span class="line">o.method();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">interface Inner &#123;</span><br><span class="line">public void function();</span><br><span class="line">&#125;</span><br><span class="line">//直接使用匿名内部类写方法并调用方法。</span><br><span class="line">class Outer &#123;</span><br><span class="line">public void method() &#123;</span><br><span class="line">new Inner() &#123;</span><br><span class="line"></span><br><span class="line">@Override</span><br><span class="line">public void function() &#123;</span><br><span class="line">System.out.println(&quot;function&quot;);</span><br><span class="line">&#125;</span><br><span class="line">&#125;.function();</span><br></pre></td></tr></table></figure>
-
-<h1 id="内部类——Why"><a href="#内部类——Why" class="headerlink" title="内部类——Why"></a><strong>内部类——Why</strong></h1><p>我们为什么需要使用内部类？其实答案很简单，<del><strong>程序员想偷懒</strong></del>。<br>1.可以使命名变得简洁</p>
-<p>2.使代码更加紧凑，简洁,封装性比内部类更优</p>
-<p>3.一个类用于继承其他类或是实现接口，无需增加其他的方法，只是对继承方法实现   覆盖。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">	/*B bbb=new B();</span><br><span class="line">	C ccc=new C();</span><br><span class="line">	bbb.printf_Iofo();</span><br><span class="line">	ccc.printf_Iofo();*/</span><br><span class="line">	ABC abc=new ABC();</span><br><span class="line">	abc.function();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">*/</span><br><span class="line">  class B implements A&#123; public void printfIofo() &#123; System.out.println(&quot;B&quot;); &#125;</span><br><span class="line">  </span><br><span class="line">  &#125; class C implements A&#123; public void printfIofo() &#123; System.out.println(&quot;C&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  &#125;</span><br><span class="line"> /*</span><br><span class="line">class ABC&#123;</span><br><span class="line">	public void function() &#123;</span><br><span class="line">		new A() &#123;</span><br><span class="line">			public void printf_Iofo() &#123;                   </span><br><span class="line">				System.out.println(&quot;B&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		&#125;.printf_Iofo();</span><br><span class="line">		new A() &#123;</span><br><span class="line">			public void printf_Iofo() &#123;                   </span><br><span class="line">				System.out.println(&quot;C&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		&#125;.printf_Iofo();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">interface A&#123;</span><br><span class="line">	public void printf_Iofo();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>按照注释中的代码也可以输出同样输出B，C但是每要输出一个不同的字母都要创建一个实现该接口类的对象并调用方法假如我们要用1w次不同的这个接口的方法那不是要创建1w次对象吗？这样做并不效率，并且会显的代码很冗杂，所以使用匿名内部类我们不需要创建多余的对象直接可以做到相同的事情。</p>
-<h1 id="内部类——where"><a href="#内部类——where" class="headerlink" title="内部类——where"></a><strong>内部类——where</strong></h1><p>该类作为参数传递并且只使用一次的情况</p>
-<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a><strong>补充</strong></h1><p>在学习完后一直有个疑问，<br>我们知道抽象类和接口并不能创建对象，new 类/接口()这是错误的格式，但是我们在匿名内部类中却有new 类/接口()这样的格式，这是不是就意味着我门创建了该接口的对象了呢？答案是否定的，匿名内部类注意它是一个类，这就意味着我们并不是创建接口对象而是创建了该类的对象，而该类没有名字但是它自动的去实现该接口并创建该类的对象。</p>
-<p>简单来说就是:<strong><em>创建了继承这个类的子类对象或者是创建了实现这个接口的子类对象</em></strong><br>该文</p>
-
+        
     </div>
 
     
@@ -378,15 +356,15 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
+                <a href="/2019/09/02/windows下Hexo博客保姆级搭建教程（一）/" rel="next" title="windows下Hexo博客保姆级搭建教程（一）">
+                  <i class="fa fa-chevron-left"></i> windows下Hexo博客保姆级搭建教程（一）
+                </a>
+              
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/08/31/猴面雀也能看懂的HashMap结构以及核心源码深入分析/" rel="prev" title="猴面雀也能看懂的HashMap结构以及核心源码深入分析">
-                  猴面雀也能看懂的HashMap结构以及核心源码深入分析 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -425,17 +403,8 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -541,23 +510,6 @@
 
         </div>
       </div>
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内部类——Waht"><span class="nav-number">2.</span> <span class="nav-text">内部类——Waht</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内部类——How"><span class="nav-number">3.</span> <span class="nav-text">内部类——How</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内部类——Why"><span class="nav-number">4.</span> <span class="nav-text">内部类——Why</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内部类——where"><span class="nav-number">5.</span> <span class="nav-text">内部类——where</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补充"><span class="nav-number">6.</span> <span class="nav-text">补充</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
 
     </div>
   </aside>
