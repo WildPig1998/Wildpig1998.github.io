@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="Thread与Runnable在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别 继承Thread类我直接以网上常用的卖票的程序来实现，如下： 12345678910111213141516171819202122public class MyThreadWithExtends extends Thre">
+  <meta name="description" content="Thread与Runnable在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别">
 <meta name="keywords" content="JAVA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多线程的两种创建方式以及区别">
 <meta property="og:url" content="http://yoursite.com/2019/09/17/多线程的两种创建方式以及区别/index.html">
 <meta property="og:site_name" content="I want to learn!">
-<meta property="og:description" content="Thread与Runnable在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别 继承Thread类我直接以网上常用的卖票的程序来实现，如下： 12345678910111213141516171819202122public class MyThreadWithExtends extends Thre">
+<meta property="og:description" content="Thread与Runnable在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-19T07:55:10.901Z">
+<meta property="og:updated_time" content="2019-09-19T07:58:56.261Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="多线程的两种创建方式以及区别">
-<meta name="twitter:description" content="Thread与Runnable在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别 继承Thread类我直接以网上常用的卖票的程序来实现，如下： 12345678910111213141516171819202122public class MyThreadWithExtends extends Thre">
+<meta name="twitter:description" content="Thread与Runnable在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别">
   <link rel="canonical" href="http://yoursite.com/2019/09/17/多线程的两种创建方式以及区别/">
 
 
@@ -281,7 +281,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-19 15:55:10" itemprop="dateModified" datetime="2019-09-19T15:55:10+08:00">2019-09-19</time>
+                <time title="修改时间：2019-09-19 15:58:56" itemprop="dateModified" datetime="2019-09-19T15:58:56+08:00">2019-09-19</time>
               </span>
             
           
@@ -340,6 +340,7 @@
 
       
         <h1 id="Thread与Runnable"><a href="#Thread与Runnable" class="headerlink" title="Thread与Runnable"></a>Thread与Runnable</h1><p>在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别</p>
+<a id="more"></a> 
 <h2 id="继承Thread类"><a href="#继承Thread类" class="headerlink" title="继承Thread类"></a>继承Thread类</h2><p>我直接以网上常用的卖票的程序来实现，如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">public class MyThreadWithExtends extends Thread &#123;</span><br><span class="line"> </span><br><span class="line">	private int tickets = 10;</span><br><span class="line"> </span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line"> </span><br><span class="line">		for (int i = 0; i &lt;= 100; i++) &#123;</span><br><span class="line">			if(tickets&gt;0)&#123;</span><br><span class="line">				System.out.println(Thread.currentThread().getName()+&quot;--卖出票：&quot; + tickets--);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		new MyThreadWithExtends().start();</span><br><span class="line">		new MyThreadWithExtends().start();</span><br><span class="line">		new MyThreadWithExtends().start();</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
