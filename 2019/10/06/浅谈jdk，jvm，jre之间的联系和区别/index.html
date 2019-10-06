@@ -55,19 +55,21 @@
   };
 </script>
 
-  <meta name="description" content="Thread与Runnable在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别">
-<meta name="keywords" content="JAVA">
+  <meta name="description" content="一.JDKJDK是Java语言的软件开发工具包(SDk),JDK是整个java开发的核心,它包含了JAVA的运行环境(JVM+Java系统类库(即lib))和JAVA工具(javac/java/jdb等)。">
+<meta name="keywords" content="JAVA,jdk,jvm,jre">
 <meta property="og:type" content="article">
-<meta property="og:title" content="多线程的两种创建方式以及区别">
-<meta property="og:url" content="http://yoursite.com/2019/09/17/多线程的两种创建方式以及区别/index.html">
+<meta property="og:title" content="浅谈jdk，jvm，jre之间的联系和区别">
+<meta property="og:url" content="http://yoursite.com/2019/10/06/浅谈jdk，jvm，jre之间的联系和区别/index.html">
 <meta property="og:site_name" content="I want to learn!">
-<meta property="og:description" content="Thread与Runnable在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别">
+<meta property="og:description" content="一.JDKJDK是Java语言的软件开发工具包(SDk),JDK是整个java开发的核心,它包含了JAVA的运行环境(JVM+Java系统类库(即lib))和JAVA工具(javac/java/jdb等)。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-19T07:58:56.261Z">
+<meta property="og:image" content="http://yoursite.com/2019/10/06/浅谈jdk，jvm，jre之间的联系和区别/java%E7%BB%93%E6%9E%84.png">
+<meta property="og:updated_time" content="2019-10-06T06:28:47.173Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="多线程的两种创建方式以及区别">
-<meta name="twitter:description" content="Thread与Runnable在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别">
-  <link rel="canonical" href="http://yoursite.com/2019/09/17/多线程的两种创建方式以及区别/">
+<meta name="twitter:title" content="浅谈jdk，jvm，jre之间的联系和区别">
+<meta name="twitter:description" content="一.JDKJDK是Java语言的软件开发工具包(SDk),JDK是整个java开发的核心,它包含了JAVA的运行环境(JVM+Java系统类库(即lib))和JAVA工具(javac/java/jdb等)。">
+<meta name="twitter:image" content="http://yoursite.com/2019/10/06/浅谈jdk，jvm，jre之间的联系和区别/java%E7%BB%93%E6%9E%84.png">
+  <link rel="canonical" href="http://yoursite.com/2019/10/06/浅谈jdk，jvm，jre之间的联系和区别/">
 
 
 <script id="page-configurations">
@@ -81,7 +83,7 @@
   };
 </script>
 
-  <title>多线程的两种创建方式以及区别 | I want to learn!</title>
+  <title>浅谈jdk，jvm，jre之间的联系和区别 | I want to learn!</title>
   
 
 
@@ -239,7 +241,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/17/多线程的两种创建方式以及区别/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/06/浅谈jdk，jvm，jre之间的联系和区别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wild Pig">
@@ -253,7 +255,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">多线程的两种创建方式以及区别
+          <h1 class="post-title" itemprop="name headline">浅谈jdk，jvm，jre之间的联系和区别
 
             
           </h1>
@@ -270,19 +272,11 @@
                 
               
 
-              <time title="创建时间：2019-09-17 09:55:48" itemprop="dateCreated datePublished" datetime="2019-09-17T09:55:48+08:00">2019-09-17</time>
+              <time title="创建时间：2019-10-06 13:52:54 / 修改时间：14:28:47" itemprop="dateCreated datePublished" datetime="2019-10-06T13:52:54+08:00">2019-10-06</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-19 15:58:56" itemprop="dateModified" datetime="2019-09-19T15:58:56+08:00">2019-09-19</time>
-              </span>
             
           
             <span class="post-meta-item">
@@ -291,7 +285,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JAVA-java基础/" itemprop="url" rel="index"><span itemprop="name">JAVA - java基础</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JAVA/" itemprop="url" rel="index"><span itemprop="name">JAVA</span></a></span>
 
                 
                 
@@ -316,7 +310,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>3.3k</span>
+              <span>1.2k</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -326,7 +320,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span>3 分钟</span>
+              <span>1 分钟</span>
             </span>
           
 
@@ -339,24 +333,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Thread与Runnable"><a href="#Thread与Runnable" class="headerlink" title="Thread与Runnable"></a>Thread与Runnable</h1><p>在Java中给我们提供了两种实现多线程的方法，一种是通过继承Tread类，一种是是实现Runnable接口;接下来会详细介绍两种方式的用法以及区别</p>
+        <h1 id="一-JDK"><a href="#一-JDK" class="headerlink" title="一.JDK"></a>一.JDK</h1><p>JDK是Java语言的软件开发工具包(SDk),JDK是整个java开发的核心,它包含了JAVA的运行环境(JVM+Java系统类库(即lib))和JAVA工具(javac/java/jdb等)。</p>
 <a id="more"></a> 
-<h2 id="继承Thread类"><a href="#继承Thread类" class="headerlink" title="继承Thread类"></a>继承Thread类</h2><p>我直接以网上常用的卖票的程序来实现，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">public class MyThreadWithExtends extends Thread &#123;</span><br><span class="line"> </span><br><span class="line">	private int tickets = 10;</span><br><span class="line"> </span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line"> </span><br><span class="line">		for (int i = 0; i &lt;= 100; i++) &#123;</span><br><span class="line">			if(tickets&gt;0)&#123;</span><br><span class="line">				System.out.println(Thread.currentThread().getName()+&quot;--卖出票：&quot; + tickets--);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		new MyThreadWithExtends().start();</span><br><span class="line">		new MyThreadWithExtends().start();</span><br><span class="line">		new MyThreadWithExtends().start();</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这种实现方式实际上是重写了 run() 方法，由于线程的资源和 Thread 实例捆绑在一起，所以不同的线程的资源不会进行共享。但是只要我们改成如下资源又会得以共享:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public class MyThreadWithExtends extends Thread &#123;</span><br><span class="line"> </span><br><span class="line">	private int tickets = 10;</span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		for (int i = 0; i &lt;= 100; i++) &#123;</span><br><span class="line">			if(tickets&gt;0)&#123;</span><br><span class="line">				System.out.println(Thread.currentThread().getName()+&quot;--卖出票：&quot; + tickets--);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		MyThreadWithExtends test = new MyThreadWithExtends();</span><br><span class="line">		  new Thread(test).start();</span><br><span class="line">		  new Thread(test).start();</span><br><span class="line">		  new Thread(test).start();		</span><br><span class="line">		//</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这里的原因我在后面说完Runnable后悔详细说明</p>
-<h2 id="实现Runable接口"><a href="#实现Runable接口" class="headerlink" title="实现Runable接口"></a>实现Runable接口</h2><p>直接上代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public class MyThreadWithImplements implements Runnable &#123;	 </span><br><span class="line">	private int tickets = 10;</span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		for (int i = 0; i &lt;= 100; i++) &#123;</span><br><span class="line">			if(tickets&gt;0)&#123;</span><br><span class="line">				System.out.println(Thread.currentThread().getName()+&quot;--卖出票：&quot; + tickets--);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;	</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		MyThreadWithImplements myRunnable = new MyThreadWithImplements();</span><br><span class="line">		new Thread(myRunnable).start();</span><br><span class="line">		new Thread(myRunnable).start();</span><br><span class="line">		new Thread(myRunnable).start();		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="两者深度解析"><a href="#两者深度解析" class="headerlink" title="两者深度解析"></a>两者深度解析</h2><p>线程资源与 Runable 实例捆绑在一起，Thread 只是作为一个代理类，所以资源可以进行共享。看到这里其实我相信很多人都理解了为什么其实使用Thread也可以是实现资源共享;<br>在第一种方法中的第一段代码中，我们new了3个Thread对象，即三个线程分别执行三个对象中的代码，因此便是三个线程去独立地完成卖票的任务；<br>第二种方法中，我们同样也new了3个Thread对象，但只有一个Runnable对象，3个Thread对象共享这个Runnable对象中的代码，因此，便会出现3个线程共同完成卖票任务的结果。<br>可是为什么第一种方法，我们同样可以将<strong>test</strong>作为参数传递从而创建Thread对象实现资源共享呢？<br>我们打开Runnable和Tread的源码进行分析：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public interface Runnable &#123;</span><br><span class="line">    public abstract void run();</span><br><span class="line">&#125;</span><br><span class="line">public class Thread implements Runnable &#123;</span><br><span class="line">    ...</span><br><span class="line">    private Runnable target;</span><br><span class="line">    public Thread(Runnable target) &#123;</span><br><span class="line">        init(null, target, &quot;Thread-&quot; + nextThreadNum(), 0);</span><br><span class="line">    &#125;</span><br><span class="line">    public void run() &#123;</span><br><span class="line">        if (target != null) &#123;</span><br><span class="line">            target.run(); //代理的target的run方法</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们可以发现Thread是直接实现了<strong>Runnable接口</strong>所以这我们直接创建自定义类去实现<strong>Runnable</strong>其实如出一辙，而最后怎么样我们都要通过Thread来创建线程，控制线程的开始;</p>
-<h1 id="Runable优势"><a href="#Runable优势" class="headerlink" title="Runable优势"></a>Runable优势</h1><p>在我们使用多线程时，大多数我们都是使用Runable，这里的优势我认为绝对的优势就是接口对比继承的优势，即可以避免由于Java的单继承特性带来的局限。我们经常碰到这样一种情况，即当我们要将已经继承了某一个类的子类放入多线程中，由于一个类不能同时有两个父类，所以不能用继承Thread类的方式，那么，这个类就只能采用实现Runnable接口的方式了。<br>有利于程序的健壮性，代码能够被多个线程共享，代码与数据是独立的。当多个线程的执行代码来自同一个类的实例时，即称它们共享相同的代码。<br>线程池只能放入实现Runable或Callable类线程，不能直接放入继承Thread的类。</p>
-<p>ps：对于共享资源我认为这点优势并不明显，因为Thread本身就是继承Runable我们完全可以使用Thread子类的对象的引用作为参数去在Thread中传递，和使用Runnable一样的操作，只是这样我们为什么不直接使用Runnable呢？<br>在第二种方法中，由于3个Thread对象共同执行一个Runnable对象中的代码，因此可能会造成线程的不安全，比如可能ticket会输出-1（如果我们System.out….语句前加上线程休眠操作，该情况将很有可能出现），这种情况的出现是由于，一个线程在判断ticket为1&gt;0后，还没有来得及减1，另一个线程已经将ticket减1，变为了0，那么接下来之前的线程再将ticket减1，便得到了-1。这就需要加入同步操作（即互斥锁），确保同一时刻只有一个线程在执行每次for循环中的操作。(这就是下次的内容了)</p>
+<p>有这样一个关系，JDK包含JRE，而JRE包 含JVM。结构图如下:<br><img src="/2019/10/06/浅谈jdk，jvm，jre之间的联系和区别/java%E7%BB%93%E6%9E%84.png" alt="java结构.png"><br>总的来说JDK是用于java程序的开发,而jre则是只能运行class而没有编译的功能。</p>
+<h1 id="二-JRE"><a href="#二-JRE" class="headerlink" title="二.JRE"></a>二.JRE</h1><p>JRE（Java Runtime Environment，Java运行环境），包含<strong>JVM标准实现</strong>及<strong>Java核心类库</strong>。JRE是Java运行环境，并不是一个开发环境，所以没有包含任何开发工具（如编译器和调试器）<br>JRE是指java运行环境。光有JVM还不能成class的 执行，因为在解释class的时候JVM需要调用解释所需要的类库lib。 （jre里有运行.class的java.exe）<br>我们编写的Java程序也必须要JRE才能运行。</p>
+<h1 id="三-JVM"><a href="#三-JVM" class="headerlink" title="三.JVM"></a>三.JVM</h1><p>JVM（Java Virtual Machine）,即是java虚拟机，JVM是一种用于计算设备的规范，它是一个虚构出来的计算机，是通过在实际的计算机上仿真模拟各种计算机功能来实现的。<br>引入Java语言虚拟机后，Java语言在不同平台上运行时不需要重新编译。Java语言使用Java虚拟机屏蔽了与具体平台相关的信息，使得Java语言编译程序只需生成在Java虚拟机上运行的目标代码（字节码），就可以在多种平台上不加修改地运行。这就是Java的能够“一次编译，到处运行”的原因。</p>
+<h1 id="四-JDK、JRE、JVM三者的联系和区别"><a href="#四-JDK、JRE、JVM三者的联系和区别" class="headerlink" title="四.JDK、JRE、JVM三者的联系和区别"></a>四.JDK、JRE、JVM三者的联系和区别</h1><h2 id="1-三者联系"><a href="#1-三者联系" class="headerlink" title="1.三者联系"></a>1.三者联系</h2><p>只有JVM并不能直接执行class文件，对class文件进行解释需要调用解释所需要的类库lib。JVM+lib=JRE，总的来说就是我们利用JDK开发JAVA程序后，通过JDK的编译工具(javac)将文本java文件编译成class文件;在JRE上运行class文件，JVM解析class文件(即翻译给操作系统，告诉操作系统该怎么做).</p>
+<h2 id="2-三者区别"><a href="#2-三者区别" class="headerlink" title="2.三者区别"></a>2.三者区别</h2><p>JDK和JRE区别：在bin文件夹下会发现，JDK有javac.exe而JRE里面没有，javac指令是用来将java文件编译成class文件的，这是开发者需要的，而用户（只需要运行的人）是不需要的。JDK还有jar.exe, javadoc.exe等等用于开发的可执行指令文件。这也证实了一个是开发环境，一个是运行环境。<br>JRE和JVM区别：JVM并不代表就可以执行class了，JVM执行.class还需要JRE下的lib类库的支持，尤其是rt.jar。<br>参考文献:<a href="https://baike.baidu.com/item/JVM/2902369?fr=aladdin" target="_blank" rel="noopener">百度百科</a><br>        <a href="https://blog.csdn.net/songkai320/article/details/51819046" target="_blank" rel="noopener">https://blog.csdn.net/songkai320/article/details/51819046</a></p>
 
     </div>
 
@@ -374,6 +357,12 @@
             
               <a href="/tags/JAVA/" rel="tag"># JAVA</a>
             
+              <a href="/tags/jdk/" rel="tag"># jdk</a>
+            
+              <a href="/tags/jvm/" rel="tag"># jvm</a>
+            
+              <a href="/tags/jre/" rel="tag"># jre</a>
+            
           </div>
         
 
@@ -382,8 +371,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/02/windows下Hexo博客保姆级搭建教程（一）/" rel="next" title="windows下Hexo博客保姆级搭建教程（一）">
-                  <i class="fa fa-chevron-left"></i> windows下Hexo博客保姆级搭建教程（一）
+                <a href="/2019/09/17/多线程的两种创建方式以及区别/" rel="next" title="多线程的两种创建方式以及区别">
+                  <i class="fa fa-chevron-left"></i> 多线程的两种创建方式以及区别
                 </a>
               
             </div>
@@ -391,10 +380,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/10/06/浅谈jdk，jvm，jre之间的联系和区别/" rel="prev" title="浅谈jdk，jvm，jre之间的联系和区别">
-                  浅谈jdk，jvm，jre之间的联系和区别 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -567,7 +552,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Thread与Runnable"><span class="nav-number">1.</span> <span class="nav-text">Thread与Runnable</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#继承Thread类"><span class="nav-number">1.1.</span> <span class="nav-text">继承Thread类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现Runable接口"><span class="nav-number">1.2.</span> <span class="nav-text">实现Runable接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两者深度解析"><span class="nav-number">1.3.</span> <span class="nav-text">两者深度解析</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Runable优势"><span class="nav-number">2.</span> <span class="nav-text">Runable优势</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-JDK"><span class="nav-number">1.</span> <span class="nav-text">一.JDK</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-JRE"><span class="nav-number">2.</span> <span class="nav-text">二.JRE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-JVM"><span class="nav-number">3.</span> <span class="nav-text">三.JVM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-JDK、JRE、JVM三者的联系和区别"><span class="nav-number">4.</span> <span class="nav-text">四.JDK、JRE、JVM三者的联系和区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-三者联系"><span class="nav-number">4.1.</span> <span class="nav-text">1.三者联系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-三者区别"><span class="nav-number">4.2.</span> <span class="nav-text">2.三者区别</span></a></li></ol></li></ol></div>
             
 
           </div>
